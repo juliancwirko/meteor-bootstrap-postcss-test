@@ -1,0 +1,17 @@
+// here we import bootstrap.scss from node_modules/bootstrap/scss
+// we can ommit .scss extension because of postcss-easy-import extensions option
+// see package.json file for details
+@import 'bootstrap';
+
+// you can still import standard css files
+// just add .import.css extension or place it in 'imports' directory
+@import './imports/my';
+@import './my2';
+
+// test of a scss-like comment
+// this is possible because of postcss-scss parser
+.carousel {
+    max-width: 640px;
+    margin: 0 auto;
+}
+

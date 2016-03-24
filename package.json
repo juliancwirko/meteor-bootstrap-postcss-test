@@ -1,0 +1,40 @@
+{
+  "name": "bootstrap_postcss_test",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.2",
+    "meteor-node-stubs": "~0.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.4",
+    "postcss-easy-import": "^1.0.1",
+    "postcss-nested": "^1.0.0",
+    "postcss-sassy-mixins": "^2.0.0",
+    "postcss-scss": "^0.1.7",
+    "postcss-simple-vars": "^1.2.0"
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-easy-import": {
+        "extensions": [
+          ".css",
+          ".scss",
+          ".import.css"
+        ],
+        "prefix": "_"
+      },
+      "postcss-simple-vars": {},
+      "postcss-sassy-mixins": {},
+      "postcss-nested": {},
+      "autoprefixer": {
+        "browsers": [
+          "last 2 versions"
+        ]
+      }
+    },
+    "parser": "postcss-scss"
+  }
+}
