@@ -15,7 +15,7 @@ $ meteor
 
 ### What I've done here:
 
-1. I use [juliancwirko:postcss](https://github.com/juliancwirko/meteor-postcss/tree/meteor-1.3-in-progress) PostCSS integration package for Meteor (in version 1.0.0-rc.10_1)
+1. I use [juliancwirko:postcss](https://github.com/juliancwirko/meteor-postcss/tree/meteor-1.3-in-progress) PostCSS integration package for Meteor (in version 1.0.0-rc.12)
 2. I use some PostCSS plugins. Take a look at `package.json` file at 'postcss' key. Here is the list: ["autoprefixer": "^6.3.4", "postcss-easy-import": "^1.0.1", "postcss-nested": "^1.0.0", "postcss-sassy-mixins": "^2.0.0", "postcss-simple-vars": "^1.2.0"]
 3. I import all bootstrap .scss files in `client/main.css` file - yes it should be .css file not .scss
 4. I import all Bootstrap javascript in `client/main.js` file (ES6 modules).
